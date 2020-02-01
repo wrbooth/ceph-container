@@ -52,6 +52,7 @@ ALL_BUILDABLE_FLAVORS := \
 	luminous,debian,9 \
 	mimic,centos,7 \
 	nautilus,centos,7 \
+	nautilus,ubuntu,18.04 \
 	master,centos,7
 
 # ==============================================================================

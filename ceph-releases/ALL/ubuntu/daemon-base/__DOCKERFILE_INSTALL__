@@ -1,0 +1,7 @@
+# add the necessary repos
+    echo "deb https://ceph-arm32.s3-us-west-2.amazonaws.com __OS_CODENAME__ main" \
+      >> /etc/apt/sources.list.d/ceph.list && \
+    curl https://ceph-arm32.s3-us-west-2.amazonaws.com/release.asc | apt-key add - && \
+    DEBIAN_FRONTEND=noninteractive apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -yy --force-yes --no-install-recommends \
+       __CEPH_BASE_PACKAGES__
